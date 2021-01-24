@@ -18,15 +18,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\迅雷下载\glad\src\glad.c">
+    <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="test.cpp">
+    <ClCompile Include="glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -35,6 +38,12 @@
       <Filter>源文件\Shader</Filter>
     </Text>
     <Text Include="fragmentSource.txt">
+      <Filter>源文件\Shader</Filter>
+    </Text>
+    <Text Include="1.4.1fragment.txt">
+      <Filter>源文件\Shader</Filter>
+    </Text>
+    <Text Include="1.5vertex.txt">
       <Filter>源文件\Shader</Filter>
     </Text>
   </ItemGroup>
