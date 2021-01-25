@@ -24,12 +24,21 @@
     <ClCompile Include="glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="1.6_3D.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1.7.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -44,6 +53,12 @@
       <Filter>源文件\Shader</Filter>
     </Text>
     <Text Include="1.5vertex.txt">
+      <Filter>源文件\Shader</Filter>
+    </Text>
+    <Text Include="1.6vertex.txt">
+      <Filter>源文件\Shader</Filter>
+    </Text>
+    <Text Include="1.6fragment.txt">
       <Filter>源文件\Shader</Filter>
     </Text>
   </ItemGroup>

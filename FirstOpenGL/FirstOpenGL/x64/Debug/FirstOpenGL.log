@@ -1,4 +1,11 @@
-﻿  test.cpp
-E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\Shader.h(4,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\test.cpp(211,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+﻿  1.7.cpp
+E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\shader.h(4,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\1.7.cpp(222,22): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\1.7.cpp(302,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\1.7.cpp(303,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\1.7.cpp(307,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\1.7.cpp(308,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\1.7.cpp(310,10): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\1.7.cpp(311,10): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\1.7.cpp(320,28): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
   FirstOpenGL.vcxproj -> E:\GitHub\OpenGL_Learn\FirstOpenGL\x64\Debug\FirstOpenGL.exe

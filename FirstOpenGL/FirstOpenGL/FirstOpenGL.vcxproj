@@ -145,16 +145,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1.6_3D.cpp" />
+    <ClCompile Include="1.7.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="1.4.1fragment.txt" />
     <Text Include="1.5vertex.txt" />
+    <Text Include="1.6fragment.txt" />
+    <Text Include="1.6vertex.txt" />
     <Text Include="fragmentSource.txt" />
     <Text Include="vertexSource.txt" />
   </ItemGroup>
