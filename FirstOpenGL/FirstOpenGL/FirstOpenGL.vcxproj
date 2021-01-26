@@ -147,8 +147,9 @@
   <ItemGroup>
     <ClCompile Include="1.6_3D.cpp" />
     <ClCompile Include="1.7.cpp" />
+    <ClCompile Include="2.1.cpp" />
     <ClCompile Include="glad.c" />
-    <ClCompile Include="test.cpp" />
+    <ClCompile Include="1.4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
@@ -160,6 +161,10 @@
     <Text Include="1.5vertex.txt" />
     <Text Include="1.6fragment.txt" />
     <Text Include="1.6vertex.txt" />
+    <Text Include="2.1fragment.txt" />
+    <Text Include="2.1lightFragment.txt" />
+    <Text Include="2.1lightVertex.txt" />
+    <Text Include="2.1vertex.txt" />
     <Text Include="fragmentSource.txt" />
     <Text Include="vertexSource.txt" />
   </ItemGroup>

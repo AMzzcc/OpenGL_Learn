@@ -1,0 +1,36 @@
+#version 330 core
+in vec3 FragPos;
+in vec3 Normal;
+
+out vec4 color;
+ 
+uniform vec3 objectColor;
+uniform vec3 lightColor;
+uniform vec3 lightPos;
+uniform vec3 viewPos;//观察者位置，即摄像机
+
+void main()
+{
+    //计算环境光
+	float ambientStrength = 0.5f;
+    vec3 ambient = ambientStrength * lightColor;
+    //计算漫反射
+    vec3 norm = normalize(Normal);//法向量
+    vec3 lightDir = normalize(lightPos - FragPos);//方向向量
+    float diff = max(dot(norm, lightDir), 0.0);//光对当前片段的实际的散射影响
+    vec3 diffuse = diff * lightColor;//计算得出散射因子
+    //镜面反射
+    float specularStrength = 0.5f;//镜面亮度因子
+    vec3 viewDir = normalize(viewPos - FragPos);//观察向量
+    vec3 reflectDir = reflect(-lightDir, norm);//反射光向量
+
+    float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32);//32是高光的发光值(Shininess)
+    //一个物体的发光值越高，反射光的能力越强，散射得越少，高光点越小
+    vec3 specular = specularStrength * spec * lightColor;//计算镜面亮度分量
+
+
+    //三者结合
+    vec3 result = (ambient + diffuse + specular) * objectColor;
+    color = vec4(result, 1.0f);
+	//color = vec4(lightColor*objectColor,1.0f);
+}

@@ -16,19 +16,37 @@
     <Filter Include="源文件\Shader">
       <UniqueIdentifier>{54b893d0-c3dd-4957-94b6-a9df7020e5f0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Test">
+      <UniqueIdentifier>{30e7e7ed-24be-4154-8874-a5943613c3c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Test\FirstChapterCpp">
+      <UniqueIdentifier>{65e1d6c6-8e47-4612-9bca-63520ec56ff7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Shader\FirstChapterShader">
+      <UniqueIdentifier>{bfd30790-0ab5-4580-9dc2-01b45564b448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Shader\SecondChapterShader">
+      <UniqueIdentifier>{e48ad9e4-0b7d-4eb3-bf47-7d17d46ac554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Test\SecondChapterCpp">
+      <UniqueIdentifier>{a8f12040-badd-4e7e-a3f9-06e1f6139d09}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="1.6_3D.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\Test\FirstChapterCpp</Filter>
     </ClCompile>
     <ClCompile Include="1.7.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\Test\FirstChapterCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="1.4.cpp">
+      <Filter>源文件\Test\FirstChapterCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="2.1.cpp">
+      <Filter>源文件\Test\SecondChapterCpp</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -43,23 +61,35 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="vertexSource.txt">
-      <Filter>源文件\Shader</Filter>
-    </Text>
-    <Text Include="fragmentSource.txt">
-      <Filter>源文件\Shader</Filter>
-    </Text>
     <Text Include="1.4.1fragment.txt">
-      <Filter>源文件\Shader</Filter>
+      <Filter>源文件\Shader\FirstChapterShader</Filter>
     </Text>
     <Text Include="1.5vertex.txt">
-      <Filter>源文件\Shader</Filter>
-    </Text>
-    <Text Include="1.6vertex.txt">
-      <Filter>源文件\Shader</Filter>
+      <Filter>源文件\Shader\FirstChapterShader</Filter>
     </Text>
     <Text Include="1.6fragment.txt">
-      <Filter>源文件\Shader</Filter>
+      <Filter>源文件\Shader\FirstChapterShader</Filter>
+    </Text>
+    <Text Include="1.6vertex.txt">
+      <Filter>源文件\Shader\FirstChapterShader</Filter>
+    </Text>
+    <Text Include="fragmentSource.txt">
+      <Filter>源文件\Shader\FirstChapterShader</Filter>
+    </Text>
+    <Text Include="vertexSource.txt">
+      <Filter>源文件\Shader\FirstChapterShader</Filter>
+    </Text>
+    <Text Include="2.1fragment.txt">
+      <Filter>源文件\Shader\SecondChapterShader</Filter>
+    </Text>
+    <Text Include="2.1vertex.txt">
+      <Filter>源文件\Shader\SecondChapterShader</Filter>
+    </Text>
+    <Text Include="2.1lightVertex.txt">
+      <Filter>源文件\Shader\SecondChapterShader</Filter>
+    </Text>
+    <Text Include="2.1lightFragment.txt">
+      <Filter>源文件\Shader\SecondChapterShader</Filter>
     </Text>
   </ItemGroup>
 </Project>
