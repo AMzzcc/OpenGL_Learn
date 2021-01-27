@@ -145,12 +145,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="1.6_3D.cpp" />
-    <ClCompile Include="1.7.cpp" />
-    <ClCompile Include="2.1.cpp" />
-    <ClCompile Include="2.3.cpp" />
+    <ClCompile Include="1.3shader.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1.6_3D.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1.7.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="2.1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="2.3.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="2.4.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="glad.c" />
-    <ClCompile Include="1.4.cpp" />
+    <ClCompile Include="1.4.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
@@ -158,6 +174,8 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="1.3fragment.txt" />
+    <Text Include="1.3vertex.txt" />
     <Text Include="1.4.1fragment.txt" />
     <Text Include="1.5vertex.txt" />
     <Text Include="1.6fragment.txt" />
@@ -167,6 +185,8 @@
     <Text Include="2.1lightVertex.txt" />
     <Text Include="2.1vertex.txt" />
     <Text Include="2.3fragment.txt" />
+    <Text Include="2.4fragment.txt" />
+    <Text Include="2.4vertex.txt" />
     <Text Include="fragmentSource.txt" />
     <Text Include="vertexSource.txt" />
   </ItemGroup>
