@@ -48,6 +48,9 @@
     <ClCompile Include="2.1.cpp">
       <Filter>源文件\Test\SecondChapterCpp</Filter>
     </ClCompile>
+    <ClCompile Include="2.3.cpp">
+      <Filter>源文件\Test\SecondChapterCpp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
@@ -89,6 +92,9 @@
       <Filter>源文件\Shader\SecondChapterShader</Filter>
     </Text>
     <Text Include="2.1lightFragment.txt">
+      <Filter>源文件\Shader\SecondChapterShader</Filter>
+    </Text>
+    <Text Include="2.3fragment.txt">
       <Filter>源文件\Shader\SecondChapterShader</Filter>
     </Text>
   </ItemGroup>

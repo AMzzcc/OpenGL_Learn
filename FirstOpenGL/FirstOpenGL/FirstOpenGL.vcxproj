@@ -148,6 +148,7 @@
     <ClCompile Include="1.6_3D.cpp" />
     <ClCompile Include="1.7.cpp" />
     <ClCompile Include="2.1.cpp" />
+    <ClCompile Include="2.3.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="1.4.cpp" />
   </ItemGroup>
@@ -165,6 +166,7 @@
     <Text Include="2.1lightFragment.txt" />
     <Text Include="2.1lightVertex.txt" />
     <Text Include="2.1vertex.txt" />
+    <Text Include="2.3fragment.txt" />
     <Text Include="fragmentSource.txt" />
     <Text Include="vertexSource.txt" />
   </ItemGroup>
