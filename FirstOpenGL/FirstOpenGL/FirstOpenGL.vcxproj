@@ -161,8 +161,9 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="2.4.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="2.5.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="1.4.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -187,6 +188,8 @@
     <Text Include="2.3fragment.txt" />
     <Text Include="2.4fragment.txt" />
     <Text Include="2.4vertex.txt" />
+    <Text Include="2.5fragment.txt" />
+    <Text Include="2.5vertex.txt" />
     <Text Include="fragmentSource.txt" />
     <Text Include="vertexSource.txt" />
   </ItemGroup>

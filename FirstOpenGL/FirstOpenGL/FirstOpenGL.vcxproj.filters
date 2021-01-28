@@ -57,6 +57,9 @@
     <ClCompile Include="1.3shader.cpp">
       <Filter>源文件\Test\FirstChapterCpp</Filter>
     </ClCompile>
+    <ClCompile Include="2.5.cpp">
+      <Filter>源文件\Test\SecondChapterCpp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
@@ -114,6 +117,12 @@
     </Text>
     <Text Include="1.3fragment.txt">
       <Filter>源文件\Shader\FirstChapterShader</Filter>
+    </Text>
+    <Text Include="2.5vertex.txt">
+      <Filter>源文件\Shader\SecondChapterShader</Filter>
+    </Text>
+    <Text Include="2.5fragment.txt">
+      <Filter>源文件\Shader\SecondChapterShader</Filter>
     </Text>
   </ItemGroup>
 </Project>
