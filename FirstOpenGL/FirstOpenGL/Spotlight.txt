@@ -1,0 +1,60 @@
+#version 330 core
+//聚光
+//物品材质
+struct Material
+{
+    sampler2D diffuse;
+    sampler2D specular;
+    float shininess;
+};
+//灯光属性
+struct Light
+{
+    vec3 position;
+    vec3 direction;
+    vec3 ambient;
+    vec3 diffuse;
+    vec3 specular;
+    float cutOff;
+};
+
+
+in vec2 TexCoords;
+in vec3 FragPos;
+in vec3 Normal;
+
+out vec4 color;
+ 
+uniform vec3 viewPos;//观察者位置，即摄像机
+uniform Material material;
+uniform Light light;
+
+void main()
+{
+    
+    vec3 lightDir = normalize(light.position - FragPos);//方向向量
+    float theta = dot(lightDir, normalize(-light.direction));
+    if(theta > light.cutOff)
+    {
+        // 执行光照计算
+        //计算环境光
+        vec3 ambient = light.ambient  * vec3(texture(material.diffuse, TexCoords));;
+        //计算漫反射
+        vec3 norm = normalize(Normal);//法向量
+        //vec3 lightDir = normalize(light.position - FragPos);//方向向量
+        vec3 lightDir = normalize(-light.direction);//方向向量
+        float diff = max(dot(norm, lightDir), 0.0);//光对当前片段的实际的散射影响
+        vec3 diffuse = light.diffuse * diff * vec3(texture(material.diffuse, TexCoords));//计算得出散射因子
+        //镜面反射
+        vec3 viewDir = normalize(viewPos - FragPos);//观察向量
+        vec3 reflectDir = reflect(-lightDir, norm);//反射光向量
+        float spec = pow(max(dot(viewDir, reflectDir), 0.0), material.shininess);
+        vec3 specular = light.specular * spec * vec3(texture(material.specular, TexCoords));  //计算镜面亮度分量
+
+        //三者结合
+        vec3 result = ambient + diffuse + specular;
+        color = vec4(result, 1.0f);
+    }
+    else // 否则使用环境光，使得场景不至于完全黑暗
+    color = vec4(light.ambient*vec3(texture(material.diffuse,TexCoords)), 1.0f);
+}

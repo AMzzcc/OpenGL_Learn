@@ -121,7 +121,16 @@
     <Text Include="2.5vertex.txt">
       <Filter>源文件\Shader\SecondChapterShader</Filter>
     </Text>
-    <Text Include="2.5fragment.txt">
+    <Text Include="Directional_Light.txt">
+      <Filter>源文件\Shader\SecondChapterShader</Filter>
+    </Text>
+    <Text Include="Point_Light.txt">
+      <Filter>源文件\Shader\SecondChapterShader</Filter>
+    </Text>
+    <Text Include="Spotlight.txt">
+      <Filter>源文件\Shader\SecondChapterShader</Filter>
+    </Text>
+    <Text Include="SpotlightUp.txt">
       <Filter>源文件\Shader\SecondChapterShader</Filter>
     </Text>
   </ItemGroup>

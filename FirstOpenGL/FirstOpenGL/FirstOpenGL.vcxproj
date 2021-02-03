@@ -188,9 +188,12 @@
     <Text Include="2.3fragment.txt" />
     <Text Include="2.4fragment.txt" />
     <Text Include="2.4vertex.txt" />
-    <Text Include="2.5fragment.txt" />
+    <Text Include="Directional_Light.txt" />
     <Text Include="2.5vertex.txt" />
     <Text Include="fragmentSource.txt" />
+    <Text Include="Point_Light.txt" />
+    <Text Include="Spotlight.txt" />
+    <Text Include="SpotlightUp.txt" />
     <Text Include="vertexSource.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,4 +1,5 @@
 #version 330 core
+//平行光,定向光
 //物品材质
 struct Material
 {

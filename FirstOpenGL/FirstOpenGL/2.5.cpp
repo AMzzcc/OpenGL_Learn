@@ -72,7 +72,10 @@ int main()
 	}
 #pragma endregion GLAD
 
-	Shader objectShader("2.5vertex.txt", "2.5fragment.txt");
+	//Shader objectShader("2.5vertex.txt", "Directional_Light.txt");
+	//Shader objectShader("2.5vertex.txt", "Point_Light.txt");
+	//Shader objectShader("2.5vertex.txt", "Spotlight.txt");
+	Shader objectShader("2.5vertex.txt", "SpotlightUp.txt");
 	Shader lampShader("2.1lightVertex.txt", "2.1lightFragment.txt");
 
 	glEnable(GL_DEPTH_TEST);//启用深度测试
@@ -272,8 +275,23 @@ int main()
 		objectShader.setVec3("light.ambient", 0.2f, 0.2f, 0.2f);
 		objectShader.setVec3("light.diffuse", 0.5f, 0.5f, 0.5f);
 		objectShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
+		////点光
 		//objectShader.setVec3("light.position", lightPos);
-		objectShader.setVec3("light.direction", -0.2f, -1.0f, -0.3f);
+		////定向光
+		//objectShader.setVec3("light.direction", -0.2f, -1.0f, -0.3f);
+		//聚光
+		objectShader.setVec3("light.position", camera.Position);
+		objectShader.setVec3("light.direction", camera.Front);
+		objectShader.setFloat("light.cutOff", glm::cos(glm::radians(12.5f)));
+		//聚光up
+		objectShader.setFloat("light.outerCutOff", glm::cos(glm::radians(17.5f)));
+
+
+		////点光
+		//objectShader.setFloat("light.constant", 1.0f);
+		//objectShader.setFloat("light.linear", 0.09f);
+		//objectShader.setFloat("light.quadratic", 0.032f);
+
 
 
 
