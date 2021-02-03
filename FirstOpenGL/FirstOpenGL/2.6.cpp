@@ -43,7 +43,6 @@ int main()
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);//主版本号
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);//次版本号
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
 	GLFWwindow* window = glfwCreateWindow(800, 600, "LearnOpenGL", NULL, NULL);
 	//（宽，高，窗口名）返回一个GLFWwindow类的实例：window
 	if (window == NULL)
@@ -183,10 +182,10 @@ int main()
 
 #pragma endregion VAO，VBO
 
-#pragma region 材质
-	unsigned int diffuseTexture = loadTexture("box_diffuse.png"); 
-	unsigned int specularTexture= loadTexture("box_specular.png");
-#pragma endregion 加载材质
+#pragma region 贴图
+	unsigned int diffuseMap = loadTexture("box_diffuse.png"); //漫反射贴图
+	unsigned int specularMap= loadTexture("box_specular.png");//镜面反射贴图
+#pragma endregion 加载贴图
 
 #pragma region 渲染
 
@@ -210,10 +209,10 @@ int main()
 
 		//材质
 		glActiveTexture(GL_TEXTURE0);
-		glBindTexture(GL_TEXTURE_2D, diffuseTexture);
+		glBindTexture(GL_TEXTURE_2D, diffuseMap);
 		objectShader.setInt("material.diffuse", 0);
 		glActiveTexture(GL_TEXTURE1);
-		glBindTexture(GL_TEXTURE_2D, specularTexture);
+		glBindTexture(GL_TEXTURE_2D, specularMap);
 		objectShader.setInt("material.specular", 1);
 
 		//objectShader.use();
