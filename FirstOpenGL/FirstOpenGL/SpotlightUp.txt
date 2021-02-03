@@ -40,7 +40,7 @@ void main()
 
     // 执行光照计算
     //计算环境光
-    vec3 ambient = light.ambient  * vec3(texture(material.diffuse, TexCoords));;
+    vec3 ambient = light.ambient  * vec3(texture(material.diffuse, TexCoords));
     //计算漫反射
     vec3 norm = normalize(Normal);//法向量
     //vec3 lightDir = normalize(light.position - FragPos);//方向向量
@@ -53,7 +53,7 @@ void main()
     float spec = pow(max(dot(viewDir, reflectDir), 0.0), material.shininess);
     vec3 specular = light.specular * spec * vec3(texture(material.specular, TexCoords));  //计算镜面亮度分量
 
-
+    //忽视环境光
     diffuse *= intensity;
     specular *= intensity;
     //三者结合

@@ -60,6 +60,9 @@
     <ClCompile Include="2.5.cpp">
       <Filter>源文件\Test\SecondChapterCpp</Filter>
     </ClCompile>
+    <ClCompile Include="2.6.cpp">
+      <Filter>源文件\Test\SecondChapterCpp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
@@ -131,6 +134,9 @@
       <Filter>源文件\Shader\SecondChapterShader</Filter>
     </Text>
     <Text Include="SpotlightUp.txt">
+      <Filter>源文件\Shader\SecondChapterShader</Filter>
+    </Text>
+    <Text Include="2.6fragment.txt">
       <Filter>源文件\Shader\SecondChapterShader</Filter>
     </Text>
   </ItemGroup>
