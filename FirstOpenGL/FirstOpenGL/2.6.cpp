@@ -8,9 +8,10 @@
 
 #include "shader.h"
 #include "camera.h"
+#include "Model.h"
 
-#define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
+//#define STB_IMAGE_IMPLEMENTATION
+//#include "stb_image.h"
 
 // callback
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
@@ -74,6 +75,7 @@ int main()
 	
 	Shader objectShader("2.5vertex.txt", "2.6fragment.txt");
 	Shader lampShader("2.1lightVertex.txt", "2.1lightFragment.txt");
+	//Model ourModel(("D:/迅雷下载/nanosuit/nanosuit.obj"));
 
 	glEnable(GL_DEPTH_TEST);//启用深度测试
 
@@ -292,7 +294,7 @@ int main()
 
 			glDrawArrays(GL_TRIANGLES, 0, 36);
 		}
-
+		//ourModel.Draw(objectShader);
 
 		lampShader.use();
 		lampShader.setMat4("projection", projection);
@@ -307,7 +309,7 @@ int main()
 			lampShader.setMat4("model", model);
 			glDrawArrays(GL_TRIANGLES, 0, 36);
 		}
-
+		
 		
 		// 检查并调用事件，交换缓冲
 		glfwSwapBuffers(window);

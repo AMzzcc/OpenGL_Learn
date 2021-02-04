@@ -31,6 +31,9 @@
     <Filter Include="源文件\Test\SecondChapterCpp">
       <UniqueIdentifier>{a8f12040-badd-4e7e-a3f9-06e1f6139d09}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Test\ThirdChapterCpp">
+      <UniqueIdentifier>{342999d9-e85d-44b7-acec-5ad3834084e5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -63,6 +66,9 @@
     <ClCompile Include="2.6.cpp">
       <Filter>源文件\Test\SecondChapterCpp</Filter>
     </ClCompile>
+    <ClCompile Include="3.3model.cpp">
+      <Filter>源文件\Test\ThirdChapterCpp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
@@ -72,6 +78,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
