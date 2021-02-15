@@ -169,13 +169,17 @@
     <ClCompile Include="2.6.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="3.3model.cpp" />
+    <ClCompile Include="3.3model.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DepthStencil.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="1.4.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="4.2stencil_vertex.txt" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Model.h" />
@@ -197,6 +201,7 @@
     <Text Include="2.4fragment.txt" />
     <Text Include="2.4vertex.txt" />
     <Text Include="2.6fragment.txt" />
+    <Text Include="4.2singlefragment.txt" />
     <Text Include="Directional_Light.txt" />
     <Text Include="2.5vertex.txt" />
     <Text Include="fragmentSource.txt" />
@@ -204,6 +209,9 @@
     <Text Include="Spotlight.txt" />
     <Text Include="SpotlightUp.txt" />
     <Text Include="vertexSource.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="4.2stencil_fragment.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

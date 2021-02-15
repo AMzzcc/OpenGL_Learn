@@ -78,6 +78,7 @@ int main()
 	//Model ourModel(("D:/迅雷下载/nanosuit/nanosuit.obj"));
 
 	glEnable(GL_DEPTH_TEST);//启用深度测试
+	glEnable(GL_STENCIL_TEST);
 
 	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);//隐藏鼠标
 
@@ -205,7 +206,8 @@ int main()
 
 		// 渲染指令
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+		//glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 
 		objectShader.use();
 

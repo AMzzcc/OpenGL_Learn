@@ -34,6 +34,12 @@
     <Filter Include="源文件\Test\ThirdChapterCpp">
       <UniqueIdentifier>{342999d9-e85d-44b7-acec-5ad3834084e5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Test\FourthChapterCpp">
+      <UniqueIdentifier>{1e728afa-20cb-42ce-853e-6c3cfba14128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Shader\FourthChapterShader">
+      <UniqueIdentifier>{efdd2e6c-a93b-4351-bc96-88860d1c211a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -69,6 +75,9 @@
     <ClCompile Include="3.3model.cpp">
       <Filter>源文件\Test\ThirdChapterCpp</Filter>
     </ClCompile>
+    <ClCompile Include="DepthStencil.cpp">
+      <Filter>源文件\Test\FourthChapterCpp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
@@ -85,6 +94,9 @@
     </ClInclude>
     <ClInclude Include="Model.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="4.2stencil_vertex.txt">
+      <Filter>源文件\Shader\FourthChapterShader</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -151,5 +163,13 @@
     <Text Include="2.6fragment.txt">
       <Filter>源文件\Shader\SecondChapterShader</Filter>
     </Text>
+    <Text Include="4.2singlefragment.txt">
+      <Filter>源文件\Shader\FourthChapterShader</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="4.2stencil_fragment.txt">
+      <Filter>源文件\Shader\FourthChapterShader</Filter>
+    </None>
   </ItemGroup>
 </Project>
