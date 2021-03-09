@@ -181,7 +181,12 @@
     <ClCompile Include="DepthStencil.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Face_culling.cpp" />
+    <ClCompile Include="Face_culling.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Framebuffers.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="glad.c" />
     <ClCompile Include="1.4.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -211,6 +216,8 @@
     <Text Include="2.4vertex.txt" />
     <Text Include="2.6fragment.txt" />
     <Text Include="4.2singlefragment.txt" />
+    <Text Include="4.5FrameBuffers_screen_fragment.txt" />
+    <Text Include="4.5FrameBuffers_screen_vertex.txt" />
     <Text Include="Directional_Light.txt" />
     <Text Include="2.5vertex.txt" />
     <Text Include="fragmentSource.txt" />

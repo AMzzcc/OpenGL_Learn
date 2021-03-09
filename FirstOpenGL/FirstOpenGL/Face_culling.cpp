@@ -241,10 +241,10 @@ int main()
         shader.setMat4("projection", projection);
 
 
-        // cubes：逆时针为正
+        // cubes：逆时针为正，但测试调为顺时针了，所以与平时不同
         glEnable(GL_CULL_FACE);//开启面剔除
         glCullFace(GL_BACK);
-        glFrontFace(GL_CCW);
+        glFrontFace(GL_CW);
         glBindVertexArray(cubeVAO);
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, cubeTexture);

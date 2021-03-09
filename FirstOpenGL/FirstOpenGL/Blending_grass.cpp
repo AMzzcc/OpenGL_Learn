@@ -208,6 +208,7 @@ int main()
     shader.use();
     shader.setInt("texture1", 0);
 
+
     // render loop
     // -----------
     while (!glfwWindowShouldClose(window))

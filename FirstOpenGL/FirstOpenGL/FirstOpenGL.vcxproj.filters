@@ -87,6 +87,9 @@
     <ClCompile Include="Face_culling.cpp">
       <Filter>源文件\Test\FourthChapterCpp</Filter>
     </ClCompile>
+    <ClCompile Include="Framebuffers.cpp">
+      <Filter>源文件\Test\FourthChapterCpp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
@@ -173,6 +176,12 @@
       <Filter>源文件\Shader\SecondChapterShader</Filter>
     </Text>
     <Text Include="4.2singlefragment.txt">
+      <Filter>源文件\Shader\FourthChapterShader</Filter>
+    </Text>
+    <Text Include="4.5FrameBuffers_screen_fragment.txt">
+      <Filter>源文件\Shader\FourthChapterShader</Filter>
+    </Text>
+    <Text Include="4.5FrameBuffers_screen_vertex.txt">
       <Filter>源文件\Shader\FourthChapterShader</Filter>
     </Text>
   </ItemGroup>
