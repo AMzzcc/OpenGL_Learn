@@ -1,13 +1,12 @@
-﻿  DepthStencil.cpp
+﻿  blending_window.cpp
 E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\Shader.h(4,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
 E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\Mesh.h(89,1): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
-E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\DepthStencil.cpp(184,28): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\DepthStencil.cpp(243,26): warning C4305: “初始化”: 从“double”到“float”截断
-E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\DepthStencil.cpp(312,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\DepthStencil.cpp(313,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\DepthStencil.cpp(317,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\DepthStencil.cpp(318,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\DepthStencil.cpp(320,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\DepthStencil.cpp(321,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\DepthStencil.cpp(330,31): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\blending_window.cpp(217,28): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\blending_window.cpp(330,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\blending_window.cpp(331,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\blending_window.cpp(335,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\blending_window.cpp(336,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\blending_window.cpp(338,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\blending_window.cpp(339,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\GitHub\OpenGL_Learn\FirstOpenGL\FirstOpenGL\blending_window.cpp(348,31): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
   FirstOpenGL.vcxproj -> E:\GitHub\OpenGL_Learn\FirstOpenGL\x64\Debug\FirstOpenGL.exe

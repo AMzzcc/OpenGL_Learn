@@ -78,6 +78,12 @@
     <ClCompile Include="DepthStencil.cpp">
       <Filter>源文件\Test\FourthChapterCpp</Filter>
     </ClCompile>
+    <ClCompile Include="Blending_grass.cpp">
+      <Filter>源文件\Test\FourthChapterCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="blending_window.cpp">
+      <Filter>源文件\Test\FourthChapterCpp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
