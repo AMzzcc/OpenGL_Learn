@@ -84,6 +84,9 @@
     <ClCompile Include="blending_window.cpp">
       <Filter>源文件\Test\FourthChapterCpp</Filter>
     </ClCompile>
+    <ClCompile Include="Face_culling.cpp">
+      <Filter>源文件\Test\FourthChapterCpp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
